@@ -1,2 +1,2 @@
 # Workshops
-Workshops for the Computer Science Club
+Workshops created for the Computer Science Club
