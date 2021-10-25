@@ -9,6 +9,7 @@ Evolution of knowledge storage
   - Peer reviewed scientific journal  
   - etc...  
 - Digital Storage  
+  - The internet  
   - Databases  
   - visualizations  
   - etc...  
@@ -23,4 +24,9 @@ https://github.com/learn-anything/learn-anything - community interested in curat
 https://github.com/sindresorhus/awesome - Awesome Lists of organized & annotated links  
 
 
-https://www.gitbook.com/ - Tool for making pretty markdown docs  
+https://www.gitbook.com/ - Tool for making pretty markdown docs  (free for personal use)
+
+
+1) Make a repository with your github account for crafting a personal wiki  
+   - add at least one thing you are interested in and would want to learn more about (with the comp-sci club)
+2) Add the link to your wiki to your website that we initialized last week
