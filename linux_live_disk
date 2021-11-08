@@ -1,0 +1,32 @@
+Workshop: Creating/Using a linux live disk  
+
+Prerequisites:  
+- 1 USB drive per attendee  
+
+High-Level Overview:  
+1. Create live bootable usb drive  
+2. Boot from said drive  
+3. Explore distribution of choice  
+
+Workshop Outline:
+1. Create live bootable usb drive  
+  - Could be with any disto of choice  
+    - POP OS was ours  
+    - Double XP Opportunity: make it persistant  
+    
+2. Boot from said drive  
+  - We use the computers in the on-campus computer lab  
+  - Need approval from IT department if BIOS settings must change  
+  
+3. Explore distribution of choice  
+  - Use package management tools to acquire software of interest  
+  - Use software of interest  
+    - We explored various foss games  
+      - Super Tux Kart  
+      - Minesweeper  
+      - Etc...  
+    - As well as basic OS utilities  
+      - Terminal Emulator  
+      - File Explorer  
+      - Text Editor  
+      - Etc..  
