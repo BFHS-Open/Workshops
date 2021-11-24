@@ -1,4 +1,5 @@
 # CS Ed Week Curriculum
+A workshop for getting young people interested in computer science
 ## General Info
 - default language is Python, but participants can use whatever they choose
 - Participants will use Replit for coding
@@ -25,3 +26,26 @@
       - The person says 4 is too high. Your new list is 1-3. You guess 2.
       - The person says 2 is too high. __Therefore, correct value is 1.__
   - For a list of 100 elements, binary search will never take more than 7 steps, or guesses. Simple search on the other hand, where you guess each element in order, can take as many guesses as there are elements.
+### Big O Notation
+- Tells us how fast an algorithm is
+- Not a measure of time like seconds, but how many operations it will take to search through or sort through a list of *n* elements
+- Different algorithm's run times grow at different rates
+- Assuming one operation takes 1ms:
+![Big O growth rates](img/bigO.png "Simple Search vs. Binary Search")
+- Here is what Big O notation looks like:
+![What Big O notation looks like](img/bigO_notation.png "Big O Notation")
+- Common Big O run times:
+    - O(log *n*), known as *log time* - binary search
+    - O(n), known as *linear time* - simple search
+    - O(n!) - really slow algorithm, like the travelling salesman
+![graphs of algorithms](img/graphs.png "Graphs of different algorithms")
+- What is a logarithms?
+  - Logs are like a flip of exponents
+  - log<sub>10</sub>100 means "How many 10s must we multiply to get 100?" The answer is 2. 
+![logarithm table](img/logarithms.png "logarithms table")
+  - log without a subscript means log<sub>2</sub>
+### Arrays vs. Linked Lists
+### Selection Sort
+
+
+Credits: *Grokking Algorithms* by Aditya Y. Bhargava
