@@ -37,7 +37,6 @@ A workshop for getting young people interested in computer science
 - Common Big O run times:
     - O(log *n*), known as *log time* - binary search
     - O(n), known as *linear time* - simple search
-    - O(n!) - really slow algorithm, like the travelling salesman
 ![graphs of algorithms](img/graphs.png "Graphs of different algorithms")
 - What is a logarithms?
   - Logs are like a flip of exponents
@@ -45,6 +44,15 @@ A workshop for getting young people interested in computer science
 ![logarithm table](img/logarithms.png "logarithms table")
   - log without a subscript means log<sub>2</sub>
 ### Arrays vs. Linked Lists
+- Computer memory resemble a grid of slots, each with its own address
+- When you want to store multiple multiple items in memory, you can can use either arrays or linked lists
+- Elements is an array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory
+- One solution to the problem of running out of space allocate more space than you need to the array. The downside is that the extra memory may be wasted.
+- With a linked list, you data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
+- Both arrays and linked lists have their weaknesses:
+    - Since arrays are one continuous block of elements, reading a particular element is just a matter of knowing its index. Insertions however are much slower, since you have to move all of the elements to the right of it over 1.
+    - Reading an element of a linked list takes longer, because you do not know a particular elements position. You instead have to start at the beginning of the list, which will tell you the address of the next element and the next, until you find what you are looking for. Insertion however, are much faster, since you just have to change where one element is pointing to.
+    - Deletions have the same characteristics as as insertions in this context
 ### Selection Sort
 
 
