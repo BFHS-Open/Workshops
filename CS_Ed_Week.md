@@ -58,6 +58,13 @@ A workshop for getting young people interested in computer science
     - Reading an element of a linked list takes longer, because you do not know a particular elements position. You instead have to start at the beginning of the list, which will tell you the address of the next element and the next, until you find what you are looking for. Insertion however, are much faster, since you just have to change where one element is pointing to.
     - Deletions have the same characteristics as as insertions in this context
 ### Selection Sort
+- Say you have a list of games on your computer, each with the number of hours played. You want to sort them from most played to least played.
+- Go through the entire list and take out the most played game. Put that game in a second list, the sorted list.
+- Go through the unsorted list again, finding the next most played game, remove it, and place it in the sorted list, after the most played game. Repeat until the unsorted list is empty. You just performed selection sort!
+- How would you represent selection sort in Big O notation? 
+  - Each time you go through the unsorted list, it takes O(n) time.
+  - You must go through the unsorted list 'n' times, one time for each game.
+  - So in Big O notation, its O(n * n), or O(n<sup>2</sup>)
 
 
 Credits: *Grokking Algorithms* by Aditya Y. Bhargava
