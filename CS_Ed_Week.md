@@ -11,6 +11,34 @@ A workshop for getting young people interested in computer science
   - Algorithms
   - Debugging
 
+## Part 1: Data Types
+- All programming languages have variables that have a variety of purposes.
+- Variables can be used to store information, edit existing information, or replace information all together.
+- Data Types are the aspect of the things stored in the variable.
+- Sound confusing? Let's explain each data type in further depth, and it'll click.
+### Boolean
+- Take a simple light switch.
+- Standard light switches have two states: on or off.
+- We store either "on or off" using a boolean varibale, but instead of using "on or off," we store "true or false".
+- This "true or false" logic is the basis of all of programming and is the core of several algorithms.
+-  
+### Integers
+- Integers are just what they sound like. 
+- This data type stores numbers, specifically whole numbers as that's what an integer is.
+- They can be edited using standard math operators, such as addition, subtraction, multiplcation, and division.
+  - It's important to note that when doing division on numbers that don't go into each other, the data type switches to a float which will be discussed later
+- Integers are the most common data type that's used in programming because most programming involves a lot of algorithms and math to do complex things which will also be seen later.
+### Floats
+- 
+### Strings
+- Let's say you have the word "apple". The word "apple" is simply a combination of the different letters of the English alphabet.
+- Other examples of words that can be made include "orange" or "program" or "bird"
+- Variables that store this type of information are known as String varibales, they store words.
+- These variables are commonly used to store information that a user inputs to use at later times, but they can also be used to reuse text that shows up in programs.
+- In Python, there are a variety of different methods that can be used to edit these String values, but that's for a later time.
+
+
+
 ## Part 3(?): Data Structures and Algorithms
 ### Binary Search
 - Takes a sorted list of elements; if the element you are searching for is in the list, it returns the position.
