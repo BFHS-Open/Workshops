@@ -28,7 +28,7 @@ A workshop for getting young people interested in computer science
   - For a list of 100 elements, binary search will never take more than 7 steps, or guesses. Simple search on the other hand, where you guess each element in order, can take as many guesses as there are elements.
 ### Big O Notation
 - Tells us how fast an algorithm is
-- Not a measure of time like seconds, but how many operations it will take to search through or sort through a list of *n* elements
+- Not a measure of time like seconds, but how many operations it will take to search through or sort through a list of $n$ elements
 - Different algorithm's run times grow at different rates
 - Assuming one operation takes 1ms:
 
@@ -37,16 +37,16 @@ A workshop for getting young people interested in computer science
 
 ![What Big O notation looks like](img/bigO_notation.png "Big O Notation")
 - Common Big O run times:
-    - O(log *n*), known as *log time* - binary search
-    - O(n), known as *linear time* - simple search
+    - $O(\log n)$, known as *log time* - binary search
+    - $O(n)$, known as *linear time* - simple search
 
 ![graphs of algorithms](img/graphs.png "Graphs of different algorithms")
 - What is a logarithms?
   - Logs are like a flip of exponents
-  - log<sub>10</sub>100 means "How many 10s must we multiply to get 100?" The answer is 2.
+  - $log_{10} 100$ means "How many 10s must we multiply to get 100?" The answer is 2.
  
 ![logarithm table](img/logarithms.png "logarithms table")
-  - log without a subscript means log<sub>2</sub>
+  - log without a subscript means $\log_2$
 ### Arrays vs. Linked Lists
 - Computer memory resemble a grid of slots, each with its own address
 - When you want to store multiple multiple items in memory, you can can use either arrays or linked lists
@@ -62,9 +62,9 @@ A workshop for getting young people interested in computer science
 - Go through the entire list and take out the most played game. Put that game in a second list, the sorted list.
 - Go through the unsorted list again, finding the next most played game, remove it, and place it in the sorted list, after the most played game. Repeat until the unsorted list is empty. You just performed selection sort!
 - How would you represent selection sort in Big O notation? 
-  - Each time you go through the unsorted list, it takes O(n) time.
-  - You must go through the unsorted list 'n' times, one time for each game.
-  - So in Big O notation, its O(n * n), or O(n<sup>2</sup>)
+  - Each time you go through the unsorted list, it takes $O(n)$ time.
+  - You must go through the unsorted list $n$ times, one time for each game.
+  - So in Big O notation, its $O(n \cdot n)$, or $O(n^2)$
 
 
 Credits: *Grokking Algorithms* by Aditya Y. Bhargava
