@@ -1,0 +1,3 @@
+example1: O(1)
+example2: O(n)
+example3: O(n^2)
