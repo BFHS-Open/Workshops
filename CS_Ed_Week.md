@@ -26,6 +26,8 @@ A workshop for getting young people interested in computer science
       - The person says 4 is too high. Your new list is 1-3. You guess 2.
       - The person says 2 is too high. __Therefore, correct value is 1.__
   - For a list of 100 elements, binary search will never take more than 7 steps, or guesses. Simple search on the other hand, where you guess each element in order, can take as many guesses as there are elements.
+
+__Exercise:__ Write your own implementation of binary search
 ### Big O Notation
 - Tells us how fast an algorithm is
 - Not a measure of time like seconds, but how many operations it will take to search through or sort through a list of *n* elements
@@ -47,6 +49,8 @@ A workshop for getting young people interested in computer science
  
 ![logarithm table](img/logarithms.png "logarithms table")
   - log without a subscript means log<sub>2</sub>
+
+__Exercise:__ Determine Big O times for BigO.py examples.
 ### Arrays vs. Linked Lists
 - Computer memory resemble a grid of slots, each with its own address
 - When you want to store multiple multiple items in memory, you can can use either arrays or linked lists
@@ -65,6 +69,8 @@ A workshop for getting young people interested in computer science
   - Each time you go through the unsorted list, it takes O(n) time.
   - You must go through the unsorted list 'n' times, one time for each game.
   - So in Big O notation, its O(n * n), or O(n<sup>2</sup>)
+
+__Exercise:__ Write your own implementation of selection sort
 
 
 Credits: *Grokking Algorithms* by Aditya Y. Bhargava
