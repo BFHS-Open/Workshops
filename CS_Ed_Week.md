@@ -22,14 +22,6 @@ A workshop for getting young people interested in computer science
 - They can be edited using standard math operators, such as addition, subtraction, multiplcation, and division.
   - It's important to note that when doing division on numbers that don't go into each other, the data type switches to a double which will be discussed later.
 - Integers are the most common data type that's used in programming because most programming involves a lot of algorithms and math to do complex things which will also be seen later.
-- It's also important to note that there is a limit on how big and how small the number in an int variable can be.
-- The biggest value that an int can store is 2147483647, and the smallest is -2147483648
-### Floats
-- Floats are integer values that can store bigger and smaller numbers than an integer variable.
-- They do the same things as integer varibles, so all the math and 
-- 
-### Double
-- 
 ### Strings
 - Let's say you have the word "apple". The word "apple" is simply a combination of the different letters of the English alphabet.
 - Other examples of words that can be made include "orange" or "program" or "bird"
@@ -42,6 +34,9 @@ A workshop for getting young people interested in computer science
 - We store either "on or off" using a boolean varibale, but instead of using "on or off," we store "true or false".
 - Simple statements such as (x > 9) will be converted into a boolean depending on the integer value in x.
 - This "true or false" logic is the basis of all of programming and is the core of several algorithms.
+  - It's also important to mention that this is the basis of all computers as well.
+  - You may have seen it, it's binary.
+  - 1 equates to "true" while 0 equates to false.
 
 
 
