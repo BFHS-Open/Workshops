@@ -37,7 +37,13 @@ A workshop for getting young people interested in computer science
   - It's also important to mention that this is the basis of all computers as well.
   - You may have seen it, it's binary.
   - 1 equates to "true" while 0 equates to false.
-
+### How to create variable
+- Name of variable goes on the left side of the equal sign, data goes on the the right side
+- Example:
+    - `foo = 5`
+    - `bar = "hello there"`
+    - `baz = True`
+    - `foo = bar`
 
 
 ## Part 3(?): Data Structures and Algorithms
