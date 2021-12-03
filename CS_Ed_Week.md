@@ -45,6 +45,27 @@ A workshop for getting young people interested in computer science
     - `baz = True`
     - `foo = bar`
 
+## Part X: Lists
+### Creating lists
+- A sytax for creating a list is as follows:
+    - `list_name = [1, 2, 3, 4, 5]`
+    - This list has 6 elements
+- It is possible to mix and match data types in a list.
+- Each element in a list has a position, and that position is referred to as its index
+- Indices start at zero, so on the list above `list_name[0]` is 1, and `list_name[4]` is 5.
+### Manipulating Lists
+- Python provide a rich set of list manipulation methods
+- A method is a function. To call a method on a variable, you use what's known as dot notation
+- Here are some common list operations:
+    - Appending a list element: `list_name.append(6)`
+      - list_name -> [1, 2, 3, 4, 5, 6]
+    - Popping (removing the last element): `popped_item = list_name.pop()`
+      - list_name -> [1, 2, 3, 4, 5]
+      - popped_item -> 6
+    - Inserting: `list_name.insert(1, 10)`
+      - list_name -> [1, 10, 2, 3, 4, 5]
+    - Removing: list_name.remove(3)
+      - list_name -> [1, 10, 2, 4, 5]
 
 ## Part 3(?): Data Structures and Algorithms
 ### Binary Search
