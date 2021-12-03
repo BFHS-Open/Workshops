@@ -16,6 +16,13 @@ A workshop for getting young people interested in computer science
 - Variables can be used to store information, edit existing information, or replace information all together.
 - Data Types are the aspect of the things stored in the variable.
 - Sound confusing? Let's explain each data type in further depth, and it'll click.
+### How to create variable
+- Name of variable goes on the left side of the equal sign, data goes on the the right side
+- Example:
+    - `foo = 5`
+    - `bar = "hello there"`
+    - `baz = True`
+    - `foo = bar`
 ### Integers
 - Integers are just what they sound like. 
 - This data type stores numbers, specifically whole numbers as that's what an integer is.
@@ -37,13 +44,16 @@ A workshop for getting young people interested in computer science
   - It's also important to mention that this is the basis of all computers as well.
   - You may have seen it, it's binary.
   - 1 equates to "true" while 0 equates to false.
-### How to create variable
-- Name of variable goes on the left side of the equal sign, data goes on the the right side
-- Example:
-    - `foo = 5`
-    - `bar = "hello there"`
-    - `baz = True`
-    - `foo = bar`
+### Arrays vs. Linked Lists
+- Computer memory resemble a grid of slots, each with its own address
+- When you want to store multiple multiple items in memory, you can can use either arrays or linked lists
+- Elements is an array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory
+- One solution to the problem of running out of space allocate more space than you need to the array. The downside is that the extra memory may be wasted.
+- With a linked list, you data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
+- Both arrays and linked lists have their weaknesses:
+    - Since arrays are one continuous block of elements, reading a particular element is just a matter of knowing its index. Insertions however are much slower, since you have to move all of the elements to the right of it over 1.
+    - Reading an element of a linked list takes longer, because you do not know a particular elements position. You instead have to start at the beginning of the list, which will tell you the address of the next element and the next, until you find what you are looking for. Insertion however, are much faster, since you just have to change where one element is pointing to.
+    - Deletions have the same characteristics as as insertions in this context
 
 ## Part X: Lists
 ### Creating lists
@@ -84,6 +94,7 @@ A workshop for getting young people interested in computer science
   - For a list of 100 elements, binary search will never take more than 7 steps, or guesses. Simple search on the other hand, where you guess each element in order, can take as many guesses as there are elements.
 
 __Exercise:__ Write your own implementation of binary search
+
 ### Big O Notation
 - Tells us how fast an algorithm is
 - Not a measure of time like seconds, but how many operations it will take to search through or sort through a list of *n* elements
@@ -107,16 +118,7 @@ __Exercise:__ Write your own implementation of binary search
   - log without a subscript means log<sub>2</sub>
 
 __Exercise:__ Determine Big O times for BigO.py examples.
-### Arrays vs. Linked Lists
-- Computer memory resemble a grid of slots, each with its own address
-- When you want to store multiple multiple items in memory, you can can use either arrays or linked lists
-- Elements is an array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory
-- One solution to the problem of running out of space allocate more space than you need to the array. The downside is that the extra memory may be wasted.
-- With a linked list, you data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
-- Both arrays and linked lists have their weaknesses:
-    - Since arrays are one continuous block of elements, reading a particular element is just a matter of knowing its index. Insertions however are much slower, since you have to move all of the elements to the right of it over 1.
-    - Reading an element of a linked list takes longer, because you do not know a particular elements position. You instead have to start at the beginning of the list, which will tell you the address of the next element and the next, until you find what you are looking for. Insertion however, are much faster, since you just have to change where one element is pointing to.
-    - Deletions have the same characteristics as as insertions in this context
+
 ### Selection Sort
 - Say you have a list of games on your computer, each with the number of hours played. You want to sort them from most played to least played.
 - Go through the entire list and take out the most played game. Put that game in a second list, the sorted list.
