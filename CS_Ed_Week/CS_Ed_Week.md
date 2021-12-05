@@ -81,9 +81,40 @@ A workshop for getting young people interested in computer science
 ### General Functions
 - Functions are segments of code that are given a name so that they can be refered to by a single command
 - They can be used to cut back on the amount of space you take up by removing repetition like loops did
+  - unlike loops the repition can have all sorts of other comands around each use
+- Using a function is called "calling" a function
 - They also allow for different things to happen each call if given parameters
   - Parameters are input values of functions
   - They can be used to change what the function will do
+  - The parameters are put inside the parenthesis of the function
+    - ex: moveDistance(12)
+### Helper Functions
+- These are a specific kind of function that is made to help do a task
+  - ex: turnAround();
+- These are mainly to remove repition 
+  - But can still be used to do more complex things
+#### Setter Functions
+- These are a specific kind of helper function that sets values to things 
+  - They can set something to a specific value
+    - ex: setToZero()
+  - They can set something relative to its current value
+    - ex: addOneToValue()
+  - They can even be set or changed relative to a parameter
+    - ex: addToValue(3)
+### Getter Functions
+- These are another kind of function that give back an output
+  - You store the value they return in a variable
+    - ex: num = power(2, 3)
+      - num is set to the output of power(2, 3)
+  - You don't always have to store the value being returned
+    - This is done when you have a mix between a helper and getter function and don't need the value on this call
+- They can also be used to give information to places where it normally can't be accessed
+### Recursion
+- Recursion is calling a function within itself
+- Similar to loops, it allows the code within the function to be done over and over again
+  - Typically something would be changing so that it doesn't go on forever
+  - Sometimes they are used to have something repeate forever
+    - For example if you made the code for a game but wanted to have the game restart whenever it finishes
 ## Part 3(?): Data Structures and Algorithms
 ### Binary Search
 - Takes a sorted list of elements; if the element you are searching for is in the list, it returns the position.
