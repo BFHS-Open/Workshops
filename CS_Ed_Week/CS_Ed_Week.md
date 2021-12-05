@@ -77,6 +77,13 @@ A workshop for getting young people interested in computer science
     - Removing: list_name.remove(3)
       - list_name -> [1, 10, 2, 4, 5]
 
+## Part ?: Functions
+### General Functions
+- Functions are segments of code that are given a name so that they can be refered to by a single command
+- They can be used to cut back on the amount of space you take up by removing repetition like loops did
+- They also allow for different things to happen each call if given parameters
+  - Parameters are input values of functions
+  - They can be used to change what the function will do
 ## Part 3(?): Data Structures and Algorithms
 ### Binary Search
 - Takes a sorted list of elements; if the element you are searching for is in the list, it returns the position.
