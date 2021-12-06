@@ -89,7 +89,7 @@ A workshop for getting young people interested in computer science.
     - list_name -> [1, 2, 3, 4, 5, 6]
   - Popping (removing the last element): `popped_item = list_name.pop()`
     - list_name -> [1, 2, 3, 4, 5]
-      - popped_item -> 6
+    - popped_item -> 6
   - Inserting: `list_name.insert(1, 10)`
     - list_name -> [1, 10, 2, 3, 4, 5]
   - Removing: list_name.remove(3)
