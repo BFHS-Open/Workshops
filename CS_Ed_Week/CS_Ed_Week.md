@@ -84,7 +84,7 @@ A workshop for getting young people interested in computer science.
   - Reading an element of a linked list takes longer, because you do not know a particular element's position. You instead have to start at the beginning of the list, which will tell you the address of the next element and the next, until you find what you are looking for. Insertions however, are much faster, since you just have to change where one element is pointing to.
   - Deletions have the same characteristics as as insertions in this context.
 
-## Part X: Lists
+## Part 2: Lists
 
 ### Creating lists
 
@@ -127,7 +127,7 @@ __Exercises__:
 - You found a bigger dinner table, so you can invite three more people. Add a guest to the beginnig, middle, and end of your list.
 - Print new messages for these new guests.
 
-## Part ?: Functions
+## Part 3: Functions
 
 ### General Functions
 
@@ -175,7 +175,16 @@ __Exercises__:
   - Sometimes they are used to have something repeate forever.
     - For example if you made the code for a game but wanted to have the game restart whenever it finishes.
 
-## Part 3(?): Data Structures and Algorithms
+__Exercises__: 
+- Create a function that takes an integer argument, and returns its square.
+- Create a function takes an integer 'x' and a string and returns a list of 'x' elements, where each element is the string.
+  - Example input: function(5, "Lorem")
+  - Example output: ["Lorem", "Lorem", "Lorem", "Lorem", "Lorem"]
+- Create a function that takes a string and return a list of characters as its elements.
+  - Example input: function("Hello")
+  - Example output: ['H', 'e', 'l', 'l', 'o']
+- Create a function that takes a list of integers and and removes all integers greater than 5
+## Part 4: Data Structures and Algorithms
 
 ### Binary Search
 
