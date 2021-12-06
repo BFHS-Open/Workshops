@@ -85,15 +85,19 @@ A workshop for getting young people interested in computer science.
 - Python provides a rich set of list manipulation methods.
 - A method is a function. To call a method on a variable, you use what's known as dot notation.
 - Here are some common list operations:
-  - Appending a list element: `list_name.append(6)`
-    - list_name -> [1, 2, 3, 4, 5, 6]
-  - Popping (removing the last element): `popped_item = list_name.pop()`
-    - list_name -> [1, 2, 3, 4, 5]
-    - popped_item -> 6
-  - Inserting: `list_name.insert(1, 10)`
-    - list_name -> [1, 10, 2, 3, 4, 5]
-  - Removing: list_name.remove(3)
-    - list_name -> [1, 10, 2, 4, 5]
+    - Appending a list element: `list_name.append(value)`
+      - list_name.append(6)
+      - list_name -> [1, 2, 3, 4, 5, 6]
+    - Popping (removing the last element): `list_name.pop()`
+      - popped_item = list_name.pop()    # .pop() also returns the value that was removed, so you can store it in a variable for later
+      - list_name -> [1, 2, 3, 4, 5] 
+      - popped_item -> 6 
+    - Inserting: `list_name.insert(index, value)`
+      - list_name.insert(1, 10)
+      - list_name -> [1, 10, 2, 3, 4, 5]
+    - Removing: 'list_name.remove(index)'
+      - list_name.remove(3)
+      - list_name -> [1, 10, 2, 4, 5]
 
 ## Part ?: Functions
 
@@ -113,8 +117,7 @@ A workshop for getting young people interested in computer science.
 
 - These are a specific kind of function that is made to help do a task.
   - ex: turnAround();
-- These are mainly to remove repition,
-  - But can still be used to do more complex things.
+- These are mainly to remove repetition but can still be used to do more complex things
 
 #### Setter Functions
 
