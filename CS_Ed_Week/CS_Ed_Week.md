@@ -121,6 +121,7 @@ A workshop for getting young people interested in computer science.
   - pets = ["dog", "cat", "bird"]
   - print(pets)
   - print(pets[2])
+
 __Exercises__: 
 - Create a guest list for a party with at least three people. Print an individualized message to each member.
 - One of the guests can't make it to dinner, so you need to find someone else to invite. Modify your guest list accordingly.
@@ -231,7 +232,29 @@ __Exercise:__ Write your own implementation of binary search
 
   - log without a subscript means log<sub>2</sub>
 
-__Exercise:__ Determine Big O times for BigO.py examples.
+__Exercise:__
+```python
+my_list = [1, 2 , 3 , 4, 5, 6, 7, 8]
+
+def example1(values):
+  print(values[0])
+""" What is the Big O notation for example 1? """
+example1(my_list)
+
+def example2(values):
+  for i in values:
+    print(values[i])
+""" What is the Big O notation for example 2? """
+example2(my_list)
+
+def example3(values):
+  for i in values:
+    for j in values:
+      print(i, j)
+""" What is the Big O notation for example 3? """
+example3(my_list)
+```
+
 
 ### Selection Sort
 
