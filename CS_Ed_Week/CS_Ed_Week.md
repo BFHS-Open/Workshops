@@ -77,6 +77,86 @@ A workshop for getting young people interested in computer science
     - Removing: list_name.remove(3)
       - list_name -> [1, 10, 2, 4, 5]
 
+## Part ?: Loops
+- Loops let you run a section of code multiple times.
+  - In everyday language, "repeat 5 times", "repeat for each page", "repeat until mixture solidifies", etc.
+- There are a few different types of loops:
+  - `while <condition>: <do_thing>` checks the `<condition>`, and if it's true, runs `<do_thing>`. It then checks the `<condition>` again, and if it's still true, runs `<do_thing>` again, and so on. When the `<condition>` is false, the `while` loop is exited and the computer moves on to the next thing.
+    - ```python
+      temperature = 80
+      while temperature > 65:
+          temperature -= 1
+      print(temperature) # prints 65
+      ```
+    - Note that the `<condition>` is only checked before each time `<do_thing>` is run, not continuously.
+    - In pseudocode:
+      1. If `<condition>` is false, end.
+      2. Run `<do_thing>`.
+      3. Go to (1).
+    - If you are familiar with other languages, Python doesn't have a "do while" loop.
+  - `for <var-name> in <sequence>: <do_thing>` runs `<do_thing>` for each item in `<sequence>`. In each iteration of the loop, the value of `<var-name>` is set to the current item.
+    - ```python
+      things = ["cats", "dogs", "programming"]
+      for thing in things:
+          print("I like " + thing)
+      # prints:
+      # I like cats
+      # I like dogs
+      # I like programming
+      ```
+    - Note that the `<sequence>` is not modified.
+    - In pseudocode:
+      1. If there are no more items in `<sequence>`, end.
+      2. Get the next item of `<sequence>` and set the value of `<var-name>` to it.
+      3. Run `<do_thing>`.
+      4. Go to (1).
+    - If you are familiar with other languages, you'll notice this isn't a regular "for" loop, but rather a "for each" loop. Python doesn't have regular "for" loops.
+- Sometimes, in the middle of running a loop, you want to skip the rest of the current iteration or the whole loop altogether. This is usually because the current item of a sequence is not useful to you, or you've already found or calculated the value you wanted, or something else.
+  - `continue` skips the current iteration of the loop, immediately moving back to the top.
+    - ```python
+      things = ["cats", "dogs", "programming", "coding", "random stuff"]
+      for thing in things:
+          if len(thing) > 10:
+              continue # if it's more than 10 characters long, we don't like it!
+          print("I like " + thing)
+      # prints:
+      # I like cats
+      # I like dogs
+      # I like coding
+      ```
+  - `break` breaks out of the loop entirely, moving on to the next thing.
+    - ```python
+      has_dogs = False
+      things = ["cats", "dogs", "programming", "coding", "random stuff"]
+      for thing in things:
+          print("Checking " + thing + "...")
+          if thing == "dogs":
+              has_dogs = True
+              break # we already know the list has dogs, we don't need to check the rest!
+      # prints:
+      # "Checking cats..."
+      # "Checking dogs..."
+
+      if has_dogs:
+          print("The list has dogs!") # prints
+      else:
+          print("The list does not have dogs!") # does not print
+      ```
+- You can nest loops (have a loop within a loop):
+  - ```python
+    grid = [[0, 1, 0],
+            [1, 2, 1],
+            [2, 1, 2]] # a list of lists
+    for row in grid:
+        print("Next row:")
+        for number in row:
+            print("Checking " + str(number) + "...")
+            if number > 1:
+                print("Larger than 1!")
+                break; # this only breaks out of the inner loop!
+            print("Not larger than 1.")
+    ```
+
 ## Part ?: Functions
 ### General Functions
 - Functions are segments of code that are given a name so that they can be refered to by a single command
