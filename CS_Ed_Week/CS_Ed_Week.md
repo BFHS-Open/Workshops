@@ -67,21 +67,25 @@ A workshop for getting young people interested in computer science
 - Python provide a rich set of list manipulation methods
 - A method is a function. To call a method on a variable, you use what's known as dot notation
 - Here are some common list operations:
-    - Appending a list element: `list_name.append(6)`
+    - Appending a list element: `list_name.append(value)`
+      - list_name.append(6)
       - list_name -> [1, 2, 3, 4, 5, 6]
-    - Popping (removing the last element): `popped_item = list_name.pop()`
-      - list_name -> [1, 2, 3, 4, 5]
-      - popped_item -> 6
-    - Inserting: `list_name.insert(1, 10)`
+    - Popping (removing the last element): `list_name.pop()`
+      - popped_item = list_name.pop()    # .pop() also returns the value that was removed, so you can store it in a variable for later
+      - list_name -> [1, 2, 3, 4, 5] 
+      - popped_item -> 6 
+    - Inserting: `list_name.insert(index, value)`
+      - list_name.insert(1, 10)
       - list_name -> [1, 10, 2, 3, 4, 5]
-    - Removing: list_name.remove(3)
+    - Removing: 'list_name.remove(index)'
+      - list_name.remove(3)
       - list_name -> [1, 10, 2, 4, 5]
 
 ## Part ?: Functions
 ### General Functions
 - Functions are segments of code that are given a name so that they can be refered to by a single command
 - They can be used to cut back on the amount of space you take up by removing repetition like loops did
-  - unlike loops the repition can have all sorts of other comands around each use
+  - unlike loops the repition can have all sorts of other commands around each use
 - Using a function is called "calling" a function
 - They also allow for different things to happen each call if given parameters
   - Parameters are input values of functions
@@ -91,8 +95,7 @@ A workshop for getting young people interested in computer science
 ### Helper Functions
 - These are a specific kind of function that is made to help do a task
   - ex: turnAround();
-- These are mainly to remove repition 
-  - But can still be used to do more complex things
+- These are mainly to remove repetition but can still be used to do more complex things
 #### Setter Functions
 - These are a specific kind of helper function that sets values to things 
   - They can set something to a specific value
@@ -113,7 +116,7 @@ A workshop for getting young people interested in computer science
 - Recursion is calling a function within itself
 - Similar to loops, it allows the code within the function to be done over and over again
   - Typically something would be changing so that it doesn't go on forever
-  - Sometimes they are used to have something repeate forever
+  - Sometimes they are used to have something repeat forever
     - For example if you made the code for a game but wanted to have the game restart whenever it finishes
 ## Part 3(?): Data Structures and Algorithms
 ### Binary Search
