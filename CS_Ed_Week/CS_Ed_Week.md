@@ -150,11 +150,21 @@ A workshop for getting young people interested in computer science
     for row in grid:
         print("Next row:")
         for number in row:
-            print("Checking " + str(number) + "...")
+            print("Checking " + str(number) + "...", end=" ") # space instead of newline at end
             if number > 1:
                 print("Larger than 1!")
                 break; # this only breaks out of the inner loop!
             print("Not larger than 1.")
+    # prints:
+    # Next row:
+    # Checking 0... Not larger than 1.
+    # Checking 1... Not larger than 1.
+    # Checking 0... Not larger than 1.
+    # Next row:
+    # Checking 1... Not larger than 1.
+    # Checking 2... Larger than 1!
+    # Next row:
+    # Checking 2... Larger than 1!
     ```
 
 ## Part ?: Functions
