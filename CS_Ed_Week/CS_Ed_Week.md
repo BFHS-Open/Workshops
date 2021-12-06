@@ -90,7 +90,8 @@ A workshop for getting young people interested in computer science.
 
 - A syntax for creating a list is as follows:
     - `list_name = [1, 2, 3, 4, 5]`
-    - This list has 6 elements.
+    - This list has 5 elements.
+    - It's also possible to have an empty list, which would look like `empty_list = []`.
 - It is possible to mix and match data types in a list.
 - Each element in a list has a position, and that position is referred to as its index.
 - Indices start at zero, so on the list above `list_name[0]` is 1, and `list_name[4]` is 5.
