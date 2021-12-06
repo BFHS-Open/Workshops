@@ -186,6 +186,13 @@ __Exercises__:
   - Example output: ['H', 'e', 'l', 'l', 'o']
 - Create a function that takes a list of integers and and removes all integers greater than 5
 ## Part 4: Data Structures and Algorithms
+### What are algorithms
+- Algorithms are procedures for solving problems.
+- In computer science, algorithms usually fall into two categories: searching and sorting data
+
+__Exercise:__
+- Brainstorm ideas for an algorithm that sorts a random list of 10 numbers
+- Brainstorm ideas for how you would then search that list for a specific element
 
 ### Binary Search
 
