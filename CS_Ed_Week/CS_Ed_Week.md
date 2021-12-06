@@ -57,6 +57,21 @@ A workshop for getting young people interested in computer science.
   - You may have seen it, it's binary.
   - 1 equates to "true" while 0 equates to false.
 
+### Printing data to stdout
+
+- Many programs rely on some sort of output. That output can take many forms, but one of the most common is just text, also called standard output.
+- You can print any data type with the print() function:
+  - `print(5)`
+  - `print("foo")`
+  - `print(True)`
+- You can also print the value of a variable by using the variable's name as the first argument to print():
+  - `bar = "hello world"`
+  - `print(bar)`
+- Sometimes you may want to print a message that relies on the value of a variable. For instance, you have a variable containing a username, and every time the user logs in, you want to display a personalized welcome message.
+- For this, you use format string, also called f-strings:
+  - `username = "Joe"`
+  - `print(f"Welcome back {username}!")`
+
 ### Arrays vs. Linked Lists
 
 - Computer memory resembles a grid of slots, each with its own address.
@@ -73,9 +88,9 @@ A workshop for getting young people interested in computer science.
 
 ### Creating lists
 
-- A sytax for creating a list is as follows:
-  - `list_name = [1, 2, 3, 4, 5]`
-  - This list has 6 elements.
+- A syntax for creating a list is as follows:
+    - `list_name = [1, 2, 3, 4, 5]`
+    - This list has 6 elements.
 - It is possible to mix and match data types in a list.
 - Each element in a list has a position, and that position is referred to as its index.
 - Indices start at zero, so on the list above `list_name[0]` is 1, and `list_name[4]` is 5.
@@ -85,15 +100,32 @@ A workshop for getting young people interested in computer science.
 - Python provides a rich set of list manipulation methods.
 - A method is a function. To call a method on a variable, you use what's known as dot notation.
 - Here are some common list operations:
-  - Appending a list element: `list_name.append(6)`
+  - Appending a list element: `list_name.append(value)`
+    - list_name.append(6)
     - list_name -> [1, 2, 3, 4, 5, 6]
-  - Popping (removing the last element): `popped_item = list_name.pop()`
-    - list_name -> [1, 2, 3, 4, 5]
-      - popped_item -> 6
-  - Inserting: `list_name.insert(1, 10)`
+  - Popping (removing the last element): `list_name.pop()`
+    - popped_item = list_name.pop()    # .pop() also returns the value that was removed, so you can store it in a variable for later
+    - list_name -> [1, 2, 3, 4, 5] 
+    - popped_item -> 6 
+  - Inserting: `list_name.insert(index, value)`
+    - list_name.insert(1, 10)
     - list_name -> [1, 10, 2, 3, 4, 5]
-  - Removing: list_name.remove(3)
+  - Removing: 'list_name.remove(index)'
+    - list_name.remove(3)
     - list_name -> [1, 10, 2, 4, 5]
+      
+### Printing lists and their elements
+
+- To print the entire contents of a list, simply supply the name of list as the argument to print()
+- To print an specific element of a list, supply the name of the list, followed by its index, to print()
+  - pets = ["dog", "cat", "bird"]
+  - print(pets)
+  - print(pets[2])
+__Exercises__: 
+- Create a guest list for a party with at least three people. Print an individualized message to each member.
+- One of the guests can't make it to dinner, so you need to find someone else to invite. Modify your guest list accordingly.
+- You found a bigger dinner table, so you can invite three more people. Add a guest to the beginnig, middle, and end of your list.
+- Print new messages for these new guests.
 
 ## Part ?: Functions
 
@@ -113,8 +145,7 @@ A workshop for getting young people interested in computer science.
 
 - These are a specific kind of function that is made to help do a task.
   - ex: turnAround();
-- These are mainly to remove repition,
-  - But can still be used to do more complex things.
+- These are mainly to remove repetition but can still be used to do more complex things
 
 #### Setter Functions
 
