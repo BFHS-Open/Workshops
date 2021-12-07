@@ -157,7 +157,7 @@ __Exercises__:
 |>      |Greater than   |       100 > 10 | True |
 |<      |Less than      |       number1 < number2 | depends |
 |>=     |Greater than or equal to |     11 >= 11 | True |
-|<=     |Less than or equal to  |       string1.len() <= string2.len() | depends |
+|<=     |Less than or equal to  |       len(string1) <= len(string2) | depends |
 
 
 - __Conditional statements use booleans to control the flow__ of the code.
@@ -175,7 +175,7 @@ __Exercises__:
       destination = 'New York'
     else
       #Error: lever is broken
-      Print('STOP THE TRAIN!!!')
+      print('STOP THE TRAIN!!!')
 
 ### Some generic if statement syntax in Python:
 
@@ -213,7 +213,6 @@ The `elif` keyword is an if + else statement that can be chained to add options.
       ...
     else
       ...
-
 
 ## Part 3: Functions
 
@@ -272,6 +271,7 @@ __Exercises__:
   - Example input: function("Hello")
   - Example output: ['H', 'e', 'l', 'l', 'o']
 - Create a function that takes a list of integers and and removes all integers greater than 5
+
 ## Part 4: Data Structures and Algorithms
 
 ### Binary Search
