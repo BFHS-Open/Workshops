@@ -142,6 +142,31 @@ A workshop for getting young people interested in computer science
       else:
           print("The list does not have dogs!") # does not print
       ```
+- If you want to iterate through a range of numbers, you can use the `range` function.
+  - `range(stop)` iterates through the integers `0` (inclusive) through `stop` (exclusive):
+    ```python
+    for x in range(5):
+        print(str(x), end=" ") # space instead of newline at end
+    # prints 0 1 2 3 4
+    ```
+    ```python
+    num_list = [3, 5, 5, 100, -9, 0]
+    # compares adjacent numbers
+    # i is the left index of each pair
+    # the last index in the list isn't the left of any pair
+    for i in range(len(num_list)-1):
+        if num_list[i] > num_list[i+1]:
+            print(">", end=" ")
+        else:
+            print("<=", end=" ")
+    # prints <= <= <= > <=
+    ```
+  - `range(start, stop)` iterates through the integers `start` (inclusive) through `stop` (exclusive):
+    ```python
+    for x in range(2, 8):
+        print(str(x), end=" ") # space instead of newline at end
+    # prints 2 3 4 5 6 7
+    ```
 - You can nest loops (have a loop within a loop):
   - ```python
     grid = [[0, 1, 0],
@@ -151,7 +176,7 @@ A workshop for getting young people interested in computer science
     for row in grid:
         print("Next row:")
         for number in row:
-            print("Checking " + str(number) + "...", end=" ") # space instead of newline at end
+            print("Checking " + str(number) + "...", end=" ")
             if number > 1:
                 print("Larger than 1!")
                 break; # this only breaks out of the inner loop!
