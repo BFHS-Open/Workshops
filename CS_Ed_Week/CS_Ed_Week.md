@@ -96,8 +96,8 @@ A workshop for getting young people interested in computer science
     - If you are familiar with other languages, Python doesn't have a "do while" loop.
   - `for <var-name> in <sequence>: <do_thing>` runs `<do_thing>` for each item in `<sequence>`. In each iteration of the loop, the value of `<var-name>` is set to the current item.
     - ```python
-      things = ["cats", "dogs", "programming"]
-      for thing in things:
+      my_things = ["cats", "dogs", "programming"]
+      for thing in my_things:
           print("I like " + thing)
       # prints:
       # I like cats
@@ -114,8 +114,8 @@ A workshop for getting young people interested in computer science
 - Sometimes, in the middle of running a loop, you want to skip the rest of the current iteration or the whole loop altogether. This is usually because the current item of a sequence is not useful to you, or you've already found or calculated the value you wanted, or something else.
   - `continue` skips the current iteration of the loop, immediately moving back to the top.
     - ```python
-      things = ["cats", "dogs", "programming", "coding", "random stuff"]
-      for thing in things:
+      my_things = ["cats", "dogs", "programming", "coding", "random stuff"]
+      for thing in my_things:
           if len(thing) > 10:
               continue # if it's more than 10 characters long, we don't like it!
           print("I like " + thing)
@@ -127,8 +127,8 @@ A workshop for getting young people interested in computer science
   - `break` breaks out of the loop entirely, moving on to the next thing.
     - ```python
       has_dogs = False
-      things = ["cats", "dogs", "programming", "coding", "random stuff"]
-      for thing in things:
+      my_things = ["cats", "dogs", "programming", "coding", "random stuff"]
+      for thing in my_things:
           print("Checking " + thing + "...")
           if thing == "dogs":
               has_dogs = True
