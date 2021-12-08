@@ -282,7 +282,7 @@ The `elif` keyword is an if + else statement that can be chained to add options.
           print("The list does not have dogs!") # does not print
       ```
 - If you want to iterate through a range of numbers, you can use the `range` function.
-  - `range(stop)` iterates through the integers `0` (inclusive) through `stop` (exclusive):
+  - `range(stop)` returns the sequence of integers from `0` (inclusive) to `stop` (exclusive):
     ```python
     for x in range(5):
         print(str(x), end=" ") # space instead of newline at end
@@ -300,7 +300,7 @@ The `elif` keyword is an if + else statement that can be chained to add options.
             print("<=", end=" ")
     # prints <= <= <= > <=
     ```
-  - `range(start, stop)` iterates through the integers `start` (inclusive) through `stop` (exclusive):
+  - `range(start, stop)` returns the sequence of integers from `start` (inclusive) to `stop` (exclusive):
     ```python
     for x in range(2, 8):
         print(str(x), end=" ") # space instead of newline at end
