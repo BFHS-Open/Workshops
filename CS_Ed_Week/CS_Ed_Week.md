@@ -388,7 +388,9 @@ __Exercises__:
 - Create a function that takes a string and return a list of characters as its elements.
   - Example input: function("Hello")
   - Example output: ['H', 'e', 'l', 'l', 'o']
-- Create a function that takes a list of integers and and removes all integers greater than 5
+- Create a function that takes a list of integers and takes a another integer to filter by. It returns a new list that only contains numbers from the list that were LESS than the filter number.
+  - Example input: function(5, [1,2,3,4,5,6,7,8,9,10])
+  - Example output: [1,2,3,4]
 
 ## Part 5: Data Structures and Algorithms
 ### What are algorithms
