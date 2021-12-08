@@ -147,6 +147,7 @@ A workshop for getting young people interested in computer science
     grid = [[0, 1, 0],
             [1, 2, 1],
             [2, 1, 2]] # a list of lists
+    # searches each row of the grid for a >1 value, moving on to the next row if it finds one
     for row in grid:
         print("Next row:")
         for number in row:
