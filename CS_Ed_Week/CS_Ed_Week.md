@@ -380,6 +380,16 @@ The `elif` keyword is an if + else statement that can be chained to add options.
   - Sometimes they are used to have something repeate forever.
     - For example if you made the code for a game but wanted to have the game restart whenever it finishes.
 
+### Syntax
+
+```python
+def function_name(args):
+    """ Explanation of why the function does what it does """
+    # statements and logic go here
+    
+    return some_value # optional
+```
+
 __Exercises__: 
 - Create a function that takes an integer argument, and returns its square.
 - Create a function takes an integer 'x' and a string and returns a list of 'x' elements, where each element is the string.
