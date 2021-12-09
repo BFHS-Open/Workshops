@@ -36,7 +36,7 @@ A workshop for getting young people interested in computer science.
  
 - This data type stores numbers, specifically whole numbers as that's what an integer is.
 - They can be edited using standard math operators, such as addition, subtraction, multiplcation, and division.
-  - It's important to note that when doing division on numbers that don't divide eavenly, the data type switches to a double (which we won't be talking about in this talk). 
+  - It's important to note that when doing division on numbers that don't divide evenly, the data type switches to a double (which we won't be talking about in this talk). 
   - (TL;DR: Doubles have decimals, integers don't.)
 - Integers are the most common data type that's used in programming because most programming involves a lot of algorithms and math to do complex things which will also be seen later.
 - Example:
@@ -47,13 +47,13 @@ A workshop for getting young people interested in computer science.
 ### Strings
 
 - Let's say you have the word "apple". The word "apple" is simply a combination of different letters in the English alphabet.
-- Variables that store this type of information are known as String varibales, they store words, text, and characters.
+- Variables that store this type of information are known as String variables, they store words, text, and characters.
 - These variables are commonly used to store information that a user inputs to use at later times, but they can also be used to reuse text that shows up in programs.
 - The only thing *denoting* a string is either apostraphes (`''`) or quotes (`""`).
 - This then means that you can store numbers in a string, but because it's a string type, it would lack the ability to do math on it.
 - Example:
   - `this_string = "Stop Reading This"`
-  - `what = "what?`
+  - `what = "what?"`
   - `string_not_number = "1"`
   - `string_not_boolean = "True"`
 
@@ -102,7 +102,7 @@ A workshop for getting young people interested in computer science.
 
 - Computer memory resembles a grid of slots, each with its own address.
 - When you want to store multiple multiple items in memory, you can can use either arrays or linked lists.
-- Elements in a list are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory.
+- Elements in a array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory.
 - One solution to the problem of running out of space is to allocate more space than you need to the array. The downside is that the extra memory may be wasted.
 - With a linked list, your data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
 - Both arrays and linked lists have their weaknesses:
@@ -178,8 +178,10 @@ A workshop for getting young people interested in computer science.
 
 
 __Exercises__: 
-- Create a list of 'guest' members coming to a party.
-- With that list, put another list that stores store info about each guest, like "name", "age", "gender".
+- Create a guest list for a party with at least three people. Print an individualized message to each member.
+- One of the guests can't make it to dinner, so you need to find someone else to invite. Modify your guest list accordingly.
+- You found a bigger dinner table, so you can invite three more people. Add a guest to the beginning, middle, and end of your list.
+- Print new messages for these new guests.
 
 
 ## Comparators & Conditionals
