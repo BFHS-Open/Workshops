@@ -1,6 +1,6 @@
 def repeat_string(input_number, input_string):
   temp_list = []
-  for x in range(input_number):
+  for _ in range(input_number):
     temp_list.append(input_string)
   return temp_list
 
