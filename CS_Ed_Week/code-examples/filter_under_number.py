@@ -2,7 +2,7 @@ def Filter_Under_Number(input_number, input_list):
   temp_list = []
   for x in input_list:
     if x < input_number:
-    temp_list.append(x)
+      temp_list.append(x)
   return temp_list
 
 """Tests"""
