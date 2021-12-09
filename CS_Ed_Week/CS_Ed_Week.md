@@ -8,75 +8,101 @@ A workshop for getting young people interested in computer science.
 - Participants will use Replit for coding.
 - Cooperation and teamwork is encouraged!
 - Topics covered:
-  - Basics of Python
-  - Control flow in Python
-  - Data Structures
-  - Algorithms
-  - Debugging
+  - Basics of Replit
+  - Variables
+  - Control Flow
+  - Lists
+  - Functions
+  - Big-O Notation
 
 ## Part 1: Data Types
 
 - All programming languages have variables that have a variety of purposes.
-- Variables can be used to store information, edit existing information, or replace information all together.
+- Variables can be used to store information, edit existing information, or replace said information.
 - Data types are the aspect of the thing being stored in the variable.
-- Sound confusing? Let's explain each data type in further depth, and it'll click.
 
 ### How to create variables
 
 - Name of variable goes on the left side of the equal sign, data goes on the the right side.
+- The name of the variable doesn't matter, as long as it isn't a type already defined by Python.
+- I would personally recomend to name variables in snake case (snake_case)
 - Example:
   - `foo = 5`
   - `bar = "hello there"`
-  - `baz = True`
-  - `foo = bar`
+  - `baz_biz = True`
+  - `fizz_buzz = bar`
 
 ### Integers
-
-- Integers are just what they sound like. 
+ 
 - This data type stores numbers, specifically whole numbers as that's what an integer is.
 - They can be edited using standard math operators, such as addition, subtraction, multiplcation, and division.
-  - It's important to note that when doing division on numbers that don't go into each other, the data type switches to a double which will be discussed later.
+  - It's important to note that when doing division on numbers that don't divide evenly, the data type switches to a double (which we won't be talking about in this talk). 
+  - (TL;DR: Doubles have decimals, integers don't.)
 - Integers are the most common data type that's used in programming because most programming involves a lot of algorithms and math to do complex things which will also be seen later.
+- Example:
+  - `hello_world = 1`
+  - `why_do_this = 39481`
+  - `no = 94`
 
 ### Strings
 
 - Let's say you have the word "apple". The word "apple" is simply a combination of different letters in the English alphabet.
-- Other examples of words that can be made include "orange", "program", and "bird".
-- Variables that store this type of information are known as String varibales, they store words.
+- Variables that store this type of information are known as String variables, they store words, text, and characters.
 - These variables are commonly used to store information that a user inputs to use at later times, but they can also be used to reuse text that shows up in programs.
-- In Python, there are a variety of different methods that can be used to edit these String values, but that's for a later time.
+- The only thing *denoting* a string is either apostraphes (`''`) or quotes (`""`).
+- This then means that you can store numbers in a string, but because it's a string type, it would lack the ability to do math on it.
+- Example:
+  - `this_string = "Stop Reading This"`
+  - `what = "what?"`
+  - `string_not_number = "1"`
+  - `string_not_boolean = "True"`
 
 ### Boolean
 
-- Take a simple light switch.
-- Standard light switches have two states: on or off.
-- We store either "on or off" using a boolean variable, but instead of using "on or off," we store "true or false".
+- Think of this: a standard light switches have two states: on or off.
+- We store either "on or off" using a boolean variable, but instead of using "on or off," we store "True or False".
 - Simple conditional statements such as (x > 9) will be converted into a boolean depending on the integer value in x.
 - This "true or false" logic is the basis of all of programming and is the core of several algorithms.
   - It's also important to mention that this is the basis of all computers as well.
   - You may have seen it, it's binary.
-  - 1 equates to "true" while 0 equates to false.
+  - 1 equates to "True" while 0 equates to false.
+  - Remember, the "True" or "False" must be capitalized to be counted as a boolean, otherwise it will through an error.
+- Example:
+  - `is_it_true = True`
+  - `is_it_false = False`
+  - `enabled = True`
 
 ### Printing data to stdout
 
-- Many programs rely on some sort of output. That output can take many forms, but one of the most common is just text, also called standard output.
-- You can print any data type with the print() function:
+- Many programs rely on some sort of output. That output can take many forms, but one of the most common is just text, also called standard output (stdout).
+- You can print any type data with the print() function:
   - `print(5)`
   - `print("foo")`
   - `print(True)`
+  - `print([1,2,3])`
 - You can also print the value of a variable by using the variable's name as the first argument to print():
   - `bar = "hello world"`
   - `print(bar)`
-- Sometimes you may want to print a message that relies on the value of a variable. For instance, you have a variable containing a username, and every time the user logs in, you want to display a personalized welcome message.
-- For this, you use format string, also called f-strings:
+- If you wish to use multiple different types in the same line, you would have to use a format string (f-string).
+- These take a variable and put it directly into the string, no matter the type.
+- The syntax is `f" "`
+- Example:
   - `username = "Joe"`
-  - `print(f"Welcome back {username}!")`
+  - `print(f"Welcome back {username}!") # "Welcome back, Joe!"`
+  - `number = 7`
+  - `print(f"{username}, this talk ends at {number}:00") # "Joe, this talk ends at 7:00"`
+
+### Comments
+
+- Python has one main comment type, which is the "hash-comment"
+- Simply put a hash (`#`) sign on a line, and the python interpreter will skip everything after and go to the next line.
+- There's also tripple-quote "comments", but those are more designed for things like docs, so we won't go into them here.
 
 ### Arrays vs. Linked Lists
 
 - Computer memory resembles a grid of slots, each with its own address.
 - When you want to store multiple multiple items in memory, you can can use either arrays or linked lists.
-- Elements in an array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory.
+- Elements in a array are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory.
 - One solution to the problem of running out of space is to allocate more space than you need to the array. The downside is that the extra memory may be wasted.
 - With a linked list, your data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
 - Both arrays and linked lists have their weaknesses:
@@ -94,7 +120,7 @@ A workshop for getting young people interested in computer science.
     - It's also possible to have an empty list, which would look like `empty_list = []`.
 - It is possible to mix and match data types in a list.
 - Each element in a list has a position, and that position is referred to as its index.
-- Indices start at zero, so on the list above `list_name[0]` is 1, and `list_name[4]` is 5.
+- Indices start at zero, so on the list above `list_name[0]` is `1`, and `list_name[4]` is `5`.
 
 ### Manipulating Lists
 
@@ -128,13 +154,33 @@ A workshop for getting young people interested in computer science.
 - To print the entire contents of a list, simply supply the name of list as the argument to print()
 - To print an specific element of a list, supply the name of the list, followed by its index, to print()
   - `pets = ["dog", "cat", "bird"]`
-  - `print(pets)`
-  - `print(pets[2])`
+  - `print(pets) # ['dog', 'cat', 'bird']`
+  - `print(pets[2]) # ['bird']`
+
+### Nested lists
+
+- Python also supports *nested* list.
+- Python allows you to store *any* type in a list, meaning that even lists can be in lists.
+- This essentially means that you can put loops inside of list.
+- The main reason you would want this would be if you want to hold relational data in the same place.
+- It looks just like a normal list: 
+  - `nested_list = [[1,3,5],[3,2,6],4,"5",True]`
+- The way you would call this data would be:
+  - `nested_list[0][0]`
+- It works by desending in scope. The first one selects the table, and then the 2nd one selects the data from that table.
+- It's even possible to repeat this infinitly! Lists inside lists!
+- I would highly suggest not mixing up nested lists and lists with other types though, as if you index the list when it isn't a list type, it will fail.
+- Example:
+  - `nested_list = [['Hello', 5, True], ['Goodbye', 0, False]]`
+  - `print(nested_list) # [['Hello', 5, True], ['Goodbye', 0, False]]`
+  - `print(nested_list[0]) # ['Hello', 5, True]`
+  - `print(nested_list[0][3]) # True`
+
 
 __Exercises__: 
 - Create a guest list for a party with at least three people. Print an individualized message to each member.
 - One of the guests can't make it to dinner, so you need to find someone else to invite. Modify your guest list accordingly.
-- You found a bigger dinner table, so you can invite three more people. Add a guest to the beginnig, middle, and end of your list.
+- You found a bigger dinner table, so you can invite three more people. Add a guest to the beginning, middle, and end of your list.
 - Print new messages for these new guests.
 
 
@@ -271,7 +317,7 @@ else
       # I like dogs
       # I like coding
       ```
-  - `break` breaks out of the loop entirely, moving on to the next thing.
+  - `break` breaks out of the loop entirely, moving on to the next peice of code.
     - ```python
       has_dogs = False
       my_things = ["cats", "dogs", "programming", "coding", "random stuff"]
@@ -387,11 +433,15 @@ else
   - Typically something would be changing so that it doesn't go on forever.
   - Sometimes they are used to have something repeate forever.
     - For example if you made the code for a game but wanted to have the game restart whenever it finishes.
-
+  
+     
 ### Syntax
 
+- Functions are "defined" by calling the "def" keyword, followed by the function name and then a tuple holding any arguments.
+     
+
 ```python
-def function_name(args):
+def function_name(arg1, arg2, arg3, etc):
     """ Explanation of why the function does what it does """
     # statements and logic go here
     
