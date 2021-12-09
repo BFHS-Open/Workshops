@@ -4,4 +4,5 @@ def repeat_string(input_number, input_string):
     temp_list.append(input_string)
   return temp_list
 
-print(repeat_string(5, "Hello"))
+"""Tests"""
+print(repeat_string(5, "Hello")) # ['Hello', 'Hello', 'Hello', 'Hello', 'Hello']

@@ -15,4 +15,5 @@ def selection_sort(arr):
         newArr.append(arr.pop(smallest))
     return newArr
 
-print(selection_sort([5, 3, 6, 2, 10]))
+"""Tests"""
+print(selection_sort([5, 3, 6, 2, 10])) # [2, 3, 5, 6, 10]
