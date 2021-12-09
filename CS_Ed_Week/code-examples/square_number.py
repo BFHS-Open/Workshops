@@ -1,4 +1,4 @@
-def Square_Number(input_number):
+def square_number(input_number):
   return input_number*input_number
 
-print(Square_Number(5))
+print(square_number(5))
