@@ -178,50 +178,50 @@ __Exercises__:
 
 #### Hypothetical train code:
 ```python
-if (lever == 1)
-  destination = 'Cincinatti'
-elif (lever == 0)
-  destination = 'New York'
-else
-  #Error: lever is broken
-  print('STOP THE TRAIN!!!')
+if lever == 1:
+    destination = 'Cincinatti'
+elif lever == 0:
+    destination = 'New York'
+else:
+    # Error: lever is broken
+    print('STOP THE TRAIN!!!')
 ```
 ### Some generic if statement syntax in Python:
 ```python
 # The hash/pound symbol is how you start a comment in Python.
-if()
-  ...
+if ...:
+    ...
 ```
 #### if / else
 ```python
-if ()
-  ...
-else
-  ...
+if ...:
+    ...
+else:
+    ...
 ```
 #### Nested if / else
 ```python
-if ()
-  ...
-  if ()
+if ...:
     ...
-  else
+    if ...:
+        ...
+    else:
+        ...
+else:
     ...
-else
-  ...
 ```
 #### if / elif / else
 
 The `elif` keyword is an if + else statement that can be chained to add options.
 ```python
-if ()
-  ...
-elif ()
-  ...
-elif ()
-  ...
+if ...:
+    ...
+elif ...:
+    ...
+elif ...:
+    ...
 else
-  ...
+    ...
 ```
 ## Part 3: Loops
 
@@ -352,7 +352,7 @@ else
   - Parameters are input values of functions.
     - They can be used to change what the function will do.
     - Parameters go inside the parenthesis of the function call.
-      - ex: `moveDistance(12)`
+      - ex: `move_distance(12)`
 
 ### Helper Functions
 
@@ -364,11 +364,11 @@ else
 
 - These are a specific kind of helper function that sets values to things.
   - They can set something to a specific value.
-    - ex: `setToZero()`
+    - ex: `set_to_zero()`
   - They can set something relative to its current value.
-    - ex: `addOneToValue()`
+    - ex: `add_one_to_value()`
   - They can even be set or changed relative to a parameter.
-    - ex: `addToValue(3)`
+    - ex: `add_to_value(3)`
 
 ### Getter Functions
 
@@ -407,8 +407,8 @@ __Exercises__:
   - Example input: `function("Hello")`
   - Example output: `['H', 'e', 'l', 'l', 'o']`
 - Create a function that takes a list of integers and takes a another integer to filter by. It returns a new list that only contains numbers from the list that were LESS than the filter number.
-  - Example input: `function(5, [1,2,3,4,5,6,7,8,9,10])`
-  - Example output: `[1,2,3,4]`
+  - Example input: `function(5, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])`
+  - Example output: `[1, 2, 3, 4]`
 
 ## Part 5: Data Structures and Algorithms
 ### What are algorithms
@@ -466,23 +466,23 @@ __Exercise:__ Write your own implementation of binary search
 
 __Exercise:__
 ```python
-my_list = [1, 2 , 3 , 4, 5, 6, 7, 8]
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
 
 def example1(values):
-  print(values[0])
+    print(values[0])
 """ What is the Big O notation for example 1? """
 example1(my_list)
 
 def example2(values):
-  for i in values:
-    print(values[i])
+    for i in values:
+        print(values[i])
 """ What is the Big O notation for example 2? """
 example2(my_list)
 
 def example3(values):
-  for i in values:
-    for j in values:
-      print(i, j)
+    for i in values:
+        for j in values:
+            print(i, j)
 """ What is the Big O notation for example 3? """
 example3(my_list)
 ```
