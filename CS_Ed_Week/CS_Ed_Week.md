@@ -101,9 +101,9 @@ A workshop for getting young people interested in computer science.
 ### Arrays vs. Linked Lists
 
 - Computer memory resembles a grid of slots, each with its own address.
-- When you want to store multiple multiple items in memory, you can can use either lists or linked lists.
-- Elements in a list are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your list, you must find a bigger block of memory.
-- One solution to the problem of running out of space is to allocate more space than you need to the list. The downside is that the extra memory may be wasted.
+- When you want to store multiple multiple items in memory, you can can use either arrays or linked lists.
+- Elements in a list are stored one after another in memory. They cannot be divided up and then stored in different locations. If you run out of room for your array, you must find a bigger block of memory.
+- One solution to the problem of running out of space is to allocate more space than you need to the array. The downside is that the extra memory may be wasted.
 - With a linked list, your data may be stored anywhere in memory. This is because each element also stores the address of the next element. You never have to move your data to a different place in memory.
 - Both arrays and linked lists have their weaknesses:
   - Since arrays are one continuous block of elements, reading a particular element is just a matter of knowing its index. Insertions however are much slower, since you have to move all of the elements to the right of it over 1.
