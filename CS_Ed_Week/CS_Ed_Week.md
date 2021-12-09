@@ -102,26 +102,34 @@ A workshop for getting young people interested in computer science.
 - A method is a function. To call a method on a variable, you use what's known as dot notation.
 - Here are some common list operations:
   - Appending a list element: `list_name.append(value)`
-    - list_name.append(6)
-    - list_name -> [1, 2, 3, 4, 5, 6]
+    - ```python
+      list_name.append(6)
+      # list_name == [1, 2, 3, 4, 5, 6]
+      ```
   - Popping (removing the last element): `list_name.pop()`
-    - popped_item = list_name.pop()    # .pop() also returns the value that was removed, so you can store it in a variable for later
-    - list_name -> [1, 2, 3, 4, 5] 
-    - popped_item -> 6 
+    - ```python
+      popped_item = list_name.pop() # .pop() also returns the value that was removed, so you can store it in a variable for later`
+      # list_name == [1, 2, 3, 4, 5]
+      # popped_item == 6
+      ```
   - Inserting: `list_name.insert(index, value)`
-    - list_name.insert(1, 10)
-    - list_name -> [1, 10, 2, 3, 4, 5]
+    - ```python
+      list_name.insert(1, 10)
+      # list_name == [1, 10, 2, 3, 4, 5]
+      ```
   - Removing: 'list_name.remove(index)'
-    - list_name.remove(3)
-    - list_name -> [1, 10, 2, 4, 5]
+    - ```python
+      list_name.remove(3)
+      # list_name == [1, 10, 2, 4, 5]
+      ```
       
 ### Printing lists and their elements
 
 - To print the entire contents of a list, simply supply the name of list as the argument to print()
 - To print an specific element of a list, supply the name of the list, followed by its index, to print()
-  - pets = ["dog", "cat", "bird"]
-  - print(pets)
-  - print(pets[2])
+  - `pets = ["dog", "cat", "bird"]`
+  - `print(pets)`
+  - `print(pets[2])`
 
 __Exercises__: 
 - Create a guest list for a party with at least three people. Print an individualized message to each member.
@@ -142,9 +150,9 @@ __Exercises__:
 
 | Operator | Description | Example | Resulting Value |
 | :---: |---    |---    | --- |
-|and    |Returns True if __both__ sides are True| (5 == 5) __and__ (True != False) | True |
-|or     |Returns True if __either__ side is True| (False == False) __or__ (10 > 100) | True |
-|not    |Returns the opposite boolean value| __not__(True) | False |
+|`and`    |Returns True if __both__ sides are True| <code>(5 == 5) __and__ (True != False)</code> | `True` |
+|`or`     |Returns True if __either__ side is True| <code>(False == False) __or__ (10 > 100)</code> | `True` |
+|`not`    |Returns the opposite boolean value| <code>__not__(True)</code> | `False` |
 
 
   - The comparison operators look a little more like math, but remember they are just funtions that take two pieces of data, compare them, and return a boolean value.
@@ -153,12 +161,12 @@ __Exercises__:
 
 | Operator | Name | Example | Resulting Value |
 | :---: |---    |---    |--- |
-|==     |Equal  |       x == 10 | depends on x |
-|!=     |Not Equal      |       False != True | True |
-|>      |Greater than   |       100 > 10 | True |
-|<      |Less than      |       number1 < number2 | depends |
-|>=     |Greater than or equal to |     11 >= 11 | True |
-|<=     |Less than or equal to  |       len(string1) <= len(string2) | depends |
+|`==`     |Equal  |       <code>x __==__ 10</code> | depends on `x` |
+|`!=`     |Not Equal      |       <code>False __!=__ True</code> | `True` |
+|`>`      |Greater than   |       <code>100 __>__ 10</code> | `True` |
+|`<`      |Less than      |       <code>number1 __<__ number2</code> | depends |
+|`>=`     |Greater than or equal to |     <code>11 __>=__ 11</code> | `True` |
+|`<=`     |Less than or equal to  |       <code>len(string1) __<=__ len(string2)</code> | depends |
 
 
 - __Conditional statements use booleans to control the flow__ of the code.
@@ -169,52 +177,52 @@ __Exercises__:
   - Much like these switches, 'if' statements and other conditionals are tools for controlling what path the CPU takes through the program's code.
 
 #### Hypothetical train code:
-
-    if (lever == 1)
-      destination = 'Cincinatti'
-    elif (lever == 0)
-      destination = 'New York'
-    else
-      #Error: lever is broken
-      print('STOP THE TRAIN!!!')
-
+```python
+if lever == 1:
+    destination = 'Cincinatti'
+elif lever == 0:
+    destination = 'New York'
+else:
+    # Error: lever is broken
+    print('STOP THE TRAIN!!!')
+```
 ### Some generic if statement syntax in Python:
-
-    # The hash/pound symbol is how you start a comment in Python.
-    if()
-      ...
-
+```python
+# The hash/pound symbol is how you start a comment in Python.
+if ...:
+    ...
+```
 #### if / else
-
-    if ()
-      ...
-    else
-      ...
-
+```python
+if ...:
+    ...
+else:
+    ...
+```
 #### Nested if / else
-
-    if ()
-      ...
-      if ()
+```python
+if ...:
+    ...
+    if ...:
         ...
-      else
+    else:
         ...
-    else
-      ...
-
+else:
+    ...
+```
 #### if / elif / else
 
 The `elif` keyword is an if + else statement that can be chained to add options.
-
-    if ()
-      ...
-    elif ()
-      ...
-    elif ()
-      ...
-    else
-      ...
-
+```python
+if ...:
+    ...
+elif ...:
+    ...
+elif ...:
+    ...
+else
+    ...
+```
 ## Part 3: Loops
 
 - Loops let you run a section of code multiple times.
@@ -344,7 +352,7 @@ The `elif` keyword is an if + else statement that can be chained to add options.
   - Parameters are input values of functions.
     - They can be used to change what the function will do.
     - Parameters go inside the parenthesis of the function call.
-      - ex: moveDistance(12)
+      - ex: `move_distance(12)`
 
 ### Helper Functions
 
@@ -356,18 +364,18 @@ The `elif` keyword is an if + else statement that can be chained to add options.
 
 - These are a specific kind of helper function that sets values to things.
   - They can set something to a specific value.
-    - ex: setToZero()
+    - ex: `set_to_zero()`
   - They can set something relative to its current value.
-    - ex: addOneToValue()
+    - ex: `add_one_to_value()`
   - They can even be set or changed relative to a parameter.
-    - ex: addToValue(3)
+    - ex: `add_to_value(3)`
 
 ### Getter Functions
 
 - These are another kind of function that return an output.
   - You can store the value they return in a variable.
-    - ex: num = power(2, 3)
-      - num is set to the output of power(2, 3)
+    - ex: `num = power(2, 3)`
+      - num is set to the output of `power(2, 3)`
   - You don't always have to store the value being returned.
     - This is done when you have a mix between a helper and getter function and don't need the value on this call.
 - They can also be used to give information to places where it normally can't be accessed.
@@ -393,14 +401,14 @@ def function_name(args):
 __Exercises__: 
 - Create a function that takes an integer argument, and returns its square.
 - Create a function takes an integer 'x' and a string and returns a list of 'x' elements, where each element is the string.
-  - Example input: function(5, "Lorem")
-  - Example output: ["Lorem", "Lorem", "Lorem", "Lorem", "Lorem"]
+  - Example input: `function(5, "Lorem")`
+  - Example output: `["Lorem", "Lorem", "Lorem", "Lorem", "Lorem"]`
 - Create a function that takes a string and return a list of characters as its elements.
-  - Example input: function("Hello")
-  - Example output: ['H', 'e', 'l', 'l', 'o']
+  - Example input: `function("Hello")`
+  - Example output: `['H', 'e', 'l', 'l', 'o']`
 - Create a function that takes a list of integers and takes a another integer to filter by. It returns a new list that only contains numbers from the list that were LESS than the filter number.
-  - Example input: function(5, [1,2,3,4,5,6,7,8,9,10])
-  - Example output: [1,2,3,4]
+  - Example input: `function(5, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])`
+  - Example output: `[1, 2, 3, 4]`
 
 ## Part 5: Data Structures and Algorithms
 ### What are algorithms
@@ -458,23 +466,23 @@ __Exercise:__ Write your own implementation of binary search
 
 __Exercise:__
 ```python
-my_list = [1, 2 , 3 , 4, 5, 6, 7, 8]
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
 
 def example1(values):
-  print(values[0])
+    print(values[0])
 """ What is the Big O notation for example 1? """
 example1(my_list)
 
 def example2(values):
-  for i in values:
-    print(values[i])
+    for i in values:
+        print(values[i])
 """ What is the Big O notation for example 2? """
 example2(my_list)
 
 def example3(values):
-  for i in values:
-    for j in values:
-      print(i, j)
+    for i in values:
+        for j in values:
+            print(i, j)
 """ What is the Big O notation for example 3? """
 example3(my_list)
 ```
